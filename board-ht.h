@@ -1,7 +1,3 @@
-/* 
- * Hash tables wrapper 
- *
- * 15-122 Principles of Imperative Computation */
 
 #include <stdlib.h>
 #include <stdbool.h>
@@ -14,24 +10,17 @@
 #define _BOARD_HASHTABLE_H_
 
 struct board_data {
-  // Ignore this field (but don't remove it or change its type)
   uint8_t test;
 
-  // This part of the struct acts like the key
   bitvector board;
 
   int row_prev;
 
   int col_prev;
 
-  // You can add more fields to this struct
-  // in order to help you implement the later tasks.
 };
 
 
-
-/* IMPORTANT: You must respect the hash set interface in hdict.h when
- * writing your implementation of these functions! */
 
 /* Initializes a new hash table with the given capacity */
 hdict_t ht_new(size_t capacity)
